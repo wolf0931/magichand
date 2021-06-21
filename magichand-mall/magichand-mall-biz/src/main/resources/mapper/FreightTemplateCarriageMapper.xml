@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.magichand.mall.biz.mapper.FreightTemplateCarriageMapper">
+
+	<resultMap id="freightTemplateCarriageMap" type="com.magichand.mall.biz.entity.FreightTemplateCarriage">
+		<id property="id" column="id"/>
+		<result property="templateId" column="template_id"/>
+		<result property="designatedArea" column="designated_area"/>
+		<result property="freePrice" column="free_price"/>
+		<result property="firstNum" column="first_num"/>
+		<result property="firstMoney" column="first_money"/>
+		<result property="continueNum" column="continue_num"/>
+		<result property="continueMoney" column="continue_money"/>
+		<result property="gmtCreate" column="gmt_create"/>
+		<result property="gmtUpdate" column="gmt_update"/>
+	</resultMap>
+</mapper>

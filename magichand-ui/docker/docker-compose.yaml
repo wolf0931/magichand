@@ -1,0 +1,19 @@
+version: '3'
+services:
+  grass-ui:
+    build:
+      context: .
+    restart: always
+    container_name: grass-ui
+    image: grass-ui
+    networks:
+      - grass_default
+    external_links:
+      - grass-gateway
+    ports:
+      - 80:80
+
+# 加入到后端网络， 默认为 grass_default  | docker network ls   查看
+networks:
+  grass_default:
+    external: true

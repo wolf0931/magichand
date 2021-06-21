@@ -1,0 +1,55 @@
+version: '2'
+services:
+  magichand-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: magichand-mysql
+    image: magichand-mysql
+    ports:
+      - 3306:3306
+
+  magichand-redis:
+    image: redis:6.0
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: magichand-redis
+    hostname: magichand-redis
+
+
+  magichand-gateway:
+    build:
+      context: ./magichand-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: magichand-gateway
+    hostname: magichand-gateway
+    image: magichand-gateway
+
+  magichand-auth:
+    build:
+      context: ./magichand-auth
+    restart: always
+    container_name: magichand-auth
+    hostname: magichand-auth
+    image: magichand-auth
+
+  magichand-upms:
+    build:
+      context: ./magichand-upms/magichand-upms-biz
+    restart: always
+    container_name: magichand-upms
+    hostname: magichand-upms
+    image: magichand-upms
+
+  magichand-codegen:
+    build:
+      context: ./magichand-codegen
+    restart: always
+    container_name: magichand-codegen
+    hostname: magichand-codegen
+    image: magichand-codegen

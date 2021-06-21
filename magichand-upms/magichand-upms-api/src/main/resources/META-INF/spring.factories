@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.magichand.npms.admin.api.feign.fallback.RemoteUserServiceFallbackImpl,\
+  com.magichand.npms.admin.api.feign.fallback.RemoteLogServiceFallbackImpl,\
+  com.magichand.npms.admin.api.feign.fallback.RemoteTokenServiceFallbackImpl,\
+  com.magichand.npms.admin.api.feign.factory.RemoteUserServiceFallbackFactory,\
+  com.magichand.npms.admin.api.feign.factory.RemoteLogServiceFallbackFactory,\
+  com.magichand.npms.admin.api.feign.factory.RemoteTokenServiceFallbackFactory

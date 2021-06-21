@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.magichand.common.core.config.JacksonConfiguration,\
+  com.magichand.common.core.config.RedisTemplateConfiguration,\
+  com.magichand.common.core.config.RestTemplateConfiguration,\
+  com.magichand.common.core.util.SpringContextHolder,\
+  com.magichand.common.core.config.WebMvcConfiguration

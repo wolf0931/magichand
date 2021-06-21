@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.magichand.common.feign.FeignAutoConfiguration,\
+    com.magichand.common.feign.handle.GlobalBizExceptionHandler

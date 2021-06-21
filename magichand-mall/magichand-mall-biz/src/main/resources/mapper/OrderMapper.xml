@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.magichand.mall.biz.mapper.OrderMapper">
+
+  <resultMap id="orderMap" type="com.magichand.mall.biz.entity.Order">
+                  <id property="id" column="id"/>
+                        <result property="channel" column="channel"/>
+                        <result property="orderNo" column="order_no"/>
+                        <result property="userId" column="user_id"/>
+                        <result property="status" column="status"/>
+                        <result property="skuOriginalTotalPrice" column="sku_original_total_price"/>
+                        <result property="skuTotalPrice" column="sku_total_price"/>
+                        <result property="freightPrice" column="freight_price"/>
+                        <result property="couponPrice" column="coupon_price"/>
+                        <result property="couponId" column="coupon_id"/>
+                        <result property="groupShopId" column="group_shop_id"/>
+                        <result property="actualPrice" column="actual_price"/>
+                        <result property="payPrice" column="pay_price"/>
+                        <result property="payId" column="pay_id"/>
+                        <result property="payChannel" column="pay_channel"/>
+                        <result property="gmtPay" column="gmt_pay"/>
+                        <result property="shipNo" column="ship_no"/>
+                        <result property="shipCode" column="ship_code"/>
+                        <result property="gmtShip" column="gmt_ship"/>
+                        <result property="gmtConfirm" column="gmt_confirm"/>
+                        <result property="province" column="province"/>
+                        <result property="city" column="city"/>
+                        <result property="county" column="county"/>
+                        <result property="address" column="address"/>
+                        <result property="phone" column="phone"/>
+                        <result property="consignee" column="consignee"/>
+                        <result property="mono" column="mono"/>
+                        <result property="adminMonoLevel" column="admin_mono_level"/>
+                        <result property="adminMono" column="admin_mono"/>
+                        <result property="refundReason" column="refund_reason"/>
+                        <result property="gmtUpdate" column="gmt_update"/>
+                        <result property="gmtCreate" column="gmt_create"/>
+            </resultMap>
+</mapper>

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.magichand.common.security.service.MagicHandUserDetailsServiceImpl,\
+  com.magichand.common.security.component.MagicHandSecurityInnerAspect
+
